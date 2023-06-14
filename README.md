@@ -102,4 +102,11 @@ public class Circle implements Shape {
 }
 </pre></details>
 
-Példányosíts két `Circle` változót és próbáld ki a metódusaid!
+Példányosíts egy `Circle` változót és próbáld ki a metódusaid!
+
+Írd át a `Circle` típusát `Shape`-re, de a konstruktor hívást ne változtasd:
+`Shape myShape = new Circle(2);`, miért működik így is a kód?
+
+### 2.b `Square` osztály
+Készíts egy `Square` osztályt, ami implementálja a `Shape` interfészt! Példányosítsd,
+hívd meg a metódusait! A típusa `Shape` legyen, csak a konstrukorhívásod legyen `Square`!
