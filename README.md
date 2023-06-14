@@ -1,4 +1,4 @@
-# interface
+# Elméleti háttér
 
 ## Mi is az az interfész?
 Tágabb értelmezés: két elemet összecsatoló egység.
@@ -28,6 +28,9 @@ az osztálya implementálja az adott interface-t.
 Az interfészek nevei gyakran az adott funkció vagy szerep alapján választódnak ki, ezek gyakran
 melléknevek, pl. `Movable`, `Resizable`, de előfordulnak főnevek is pl. `Logger`, `Validator`.
 Konvenció szerint nagybetűvel kezdjük őket.
+
+***
+# Feladatok
 
 ## 1. Interface létrehozása
 Az interfész a `interface` kulcsszóval és az interfész nevével deklarálható, pl:
@@ -81,21 +84,21 @@ Mi kéne ahhoz, hogy ténylegesen működésre bírjuk ezeket a metódusokat? Ve
 <details><summary>Megoldás</summary><pre>
 public class Circle implements Shape {
 
-   private double radius;
+    private double radius;
 
-   public Circle(double radius) {
-       this.radius = radius;
-   }
+    public Circle(double radius) {
+        this.radius = radius;
+    }
 
-   @Override
-   public double getPerimeter() {
-       return 2 * radius * Math.PI ;
-   }
+    @Override
+    public double getPerimeter() {
+        return 2 * radius * Math.PI ;
+    }
 
-   @Override
-   public double getArea() {
-       return radius * radius * Math.PI;
-   }
+    @Override
+    public double getArea() {
+        return radius * radius * Math.PI;
+    }
 }
 </pre></details>
 
