@@ -73,7 +73,6 @@ public class Circle implements Shape {
         return 0;
     }
 }
-
 </pre></details>
 
 Mi kéne ahhoz, hogy ténylegesen működésre bírjuk ezeket a metódusokat? Vezess be egy `radius` változót
@@ -81,7 +80,7 @@ Mi kéne ahhoz, hogy ténylegesen működésre bírjuk ezeket a metódusokat? Ve
 
 <details><summary>Megoldás</summary><pre>
 public class Circle implements Shape {
-    
+
     private double radius;
 
     public Circle(double radius) {
@@ -98,7 +97,6 @@ public class Circle implements Shape {
         return radius * radius * Math.PI;
     }
 }
-
 </pre></details>
 
 Példányosíts két `Circle` változót és próbáld ki a metódusaid!
